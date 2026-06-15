@@ -6,7 +6,7 @@
   "questions": [
     {
       "id": 1,
-      "text": "Mi sono sentito allegro e di buon umore",
+      "text": "Mi sono sentito/a allegro/a e di buon umore",
       "answers": [
         { "text": "Mai", "score": 0 },
         { "text": "A volte", "score": 1 },
@@ -18,7 +18,7 @@
     },
     {
       "id": 2,
-      "text": "Mi sono sentito calmo e rilassato",
+      "text": "Mi sono sentito/a calmo/a e rilassato/a",
       "answers": [
         { "text": "Mai", "score": 0 },
         { "text": "A volte", "score": 1 },
@@ -30,7 +30,7 @@
     },
     {
       "id": 3,
-      "text": "Mi sono sentito attivo e vigoroso",
+      "text": "Mi sono sentito/a attivo/a ed energico/a",
       "answers": [
         { "text": "Mai", "score": 0 },
         { "text": "A volte", "score": 1 },
@@ -42,7 +42,7 @@
     },
     {
       "id": 4,
-      "text": "Mi sono svegliato sentendomi fresco e riposato",
+      "text": "Mi sono svegliato/a sentendomi fresco/a e riposato/a",
       "answers": [
         { "text": "Mai", "score": 0 },
         { "text": "A volte", "score": 1 },
@@ -54,7 +54,7 @@
     },
     {
       "id": 5,
-      "text": "La mia vita quotidiana è stata piena di cose che mi interessano",
+      "text": "La mia vita di tutti i giorni è stata piena di cose che mi interessano",
       "answers": [
         { "text": "Mai", "score": 0 },
         { "text": "A volte", "score": 1 },
