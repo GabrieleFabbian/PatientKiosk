@@ -1,0 +1,169 @@
+{
+  "id": "hads",
+  "name": "HADS",
+  "description": "Hospital Anxiety and Depression Scale",
+  "questions": [
+    {
+      "id": 1,
+      "type": "anxiety",
+      "text": "Mi sono sentito teso e molto nervoso:",
+      "answers": [
+        { "text": "Mai", "score": 0 },
+        { "text": "A volte", "score": 1 },
+        { "text": "Per molto tempo", "score": 2 },
+        { "text": "Per la maggior parte del tempo", "score": 3 }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "depression",
+      "text": "Sono riuscito ancora a provare piacere per le cose che ho sempre fatto volentieri:",
+      "answers": [
+        { "text": "Per niente", "score": 3 },
+        { "text": "Solo in parte", "score": 2 },
+        { "text": "Non proprio come una volta", "score": 1 },
+        { "text": "Proprio come una volta", "score": 0 }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "anxiety",
+      "text": "Ho provato un sentimento di paura come se potesse accadere qualcosa di terribile:",
+      "answers": [
+        { "text": "Per niente", "score": 0 },
+        { "text": "Un po' ma non da preoccuparmene", "score": 1 },
+        { "text": "Sì, ma in maniera non troppo intensa", "score": 2 },
+        { "text": "Sicuramente e in maniera intensa", "score": 3 }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "depression",
+      "text": "Sono riuscito a ridere e a vedere il lato divertente delle cose:",
+      "answers": [
+        { "text": "Per niente", "score": 3 },
+        { "text": "Sicuramente non come un tempo", "score": 2 },
+        { "text": "Non proprio come un tempo", "score": 1 },
+        { "text": "Proprio come ho sempre fatto", "score": 0 }
+      ]
+    },
+    {
+      "id": 5,
+      "type": "anxiety",
+      "text": "Mi sono venuti in mente pensieri preoccupanti:",
+      "answers": [
+        { "text": "Solo in qualche occasione", "score": 0 },
+        { "text": "A volte, non troppo spesso", "score": 1 },
+        { "text": "Per molto tempo", "score": 2 },
+        { "text": "Per la maggior parte del tempo", "score": 3 }
+      ]
+    },
+    {
+      "id": 6,
+      "type": "depression",
+      "text": "Mi sono sentito di buon umore:",
+      "answers": [
+        { "text": "Per la maggior parte del tempo", "score": 0 },
+        { "text": "A volte", "score": 1 },
+        { "text": "Raramente", "score": 2 },
+        { "text": "Mai", "score": 3 }
+      ]
+    },
+    {
+      "id": 7,
+      "type": "anxiety",
+      "text": "Ho potuto sedermi sentendomi rilassato e a mio agio:",
+      "answers": [
+        { "text": "Sempre", "score": 0 },
+        { "text": "Spesso", "score": 1 },
+        { "text": "Qualche volta", "score": 2 },
+        { "text": "Mai", "score": 3 }
+      ]
+    },
+    {
+      "id": 8,
+      "type": "depression",
+      "text": "Mi sono sentito rallentato nei movimenti:",
+      "answers": [
+        { "text": "Mai", "score": 0 },
+        { "text": "A volte", "score": 1 },
+        { "text": "Molto spesso", "score": 2 },
+        { "text": "Quasi sempre", "score": 3 }
+      ]
+    },
+    {
+      "id": 9,
+      "type": "anxiety",
+      "text": "Mi sono sentito nervoso, come con un senso di tensione allo stomaco:",
+      "answers": [
+        { "text": "Mai", "score": 0 },
+        { "text": "A volte", "score": 1 },
+        { "text": "Piuttosto spesso", "score": 2 },
+        { "text": "Molto spesso", "score": 3 }
+      ]
+    },
+    {
+      "id": 10,
+      "type": "depression",
+      "text": "Ho perso interesse per il mio aspetto fisico:",
+      "answers": [
+        { "text": "Me ne prendo cura come al solito", "score": 0 },
+        { "text": "Forse non me ne prendo cura abbastanza", "score": 1 },
+        { "text": "Non me ne prendo cura quanto dovrei", "score": 2 },
+        { "text": "Completamente", "score": 3 }
+      ]
+    },
+    {
+      "id": 11,
+      "type": "anxiety",
+      "text": "Mi sono sentito irrequieto e incapace di stare fermo:",
+      "answers": [
+        { "text": "Per niente", "score": 0 },
+        { "text": "Non molto", "score": 1 },
+        { "text": "Molto", "score": 2 },
+        { "text": "Moltissimo", "score": 3 }
+      ]
+    },
+    {
+      "id": 12,
+      "type": "depression",
+      "text": "Penso al futuro con ottimismo:",
+      "answers": [
+        { "text": "Per niente", "score": 3 },
+        { "text": "Sicuramente meno di una volta", "score": 2 },
+        { "text": "Un po' meno di una volta", "score": 1 },
+        { "text": "Così come ho sempre fatto", "score": 0 }
+      ]
+    },
+    {
+      "id": 13,
+      "type": "anxiety",
+      "text": "Mi sono venute improvvise crisi di panico:",
+      "answers": [
+        { "text": "Mai", "score": 0 },
+        { "text": "Non molto spesso", "score": 1 },
+        { "text": "Piuttosto spesso", "score": 2 },
+        { "text": "Molto spesso", "score": 3 }
+      ]
+    },
+    {
+      "id": 14,
+      "type": "depression",
+      "text": "Ho provato piacere leggendo un buon libro o seguendo la radio o la televisione:",
+      "answers": [
+        { "text": "Spesso", "score": 0 },
+        { "text": "A volte", "score": 1 },
+        { "text": "Non di frequente", "score": 2 },
+        { "text": "Molto raramente", "score": 3 }
+      ]
+    }
+  ],
+  "maxScoreAnxiety": 21,
+  "maxScoreDepression": 21,
+  "interpretations": [
+    { "min": 0, "max": 7, "label": "Nella norma" },
+    { "min": 8, "max": 10, "label": "Lieve" },
+    { "min": 11, "max": 14, "label": "Moderato" },
+    { "min": 15, "max": 21, "label": "Grave" }
+  ]
+}

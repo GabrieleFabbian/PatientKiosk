@@ -1,0 +1,74 @@
+{
+  "id": "who5",
+  "name": "WHO-5",
+  "description": "World Health Organization-Five Well-Being Index",
+  "instructions": "Indichi per ciascuna delle cinque affermazioni quale si avvicina maggiormente a come si è sentito nelle ultime due settimane. Si noti che i numeri più alti indicano un migliore benessere.",
+  "questions": [
+    {
+      "id": 1,
+      "text": "Mi sono sentito allegro e di buon umore",
+      "answers": [
+        { "text": "Mai", "score": 0 },
+        { "text": "A volte", "score": 1 },
+        { "text": "Meno della metà del tempo", "score": 2 },
+        { "text": "Più della metà del tempo", "score": 3 },
+        { "text": "La maggior parte del tempo", "score": 4 },
+        { "text": "Sempre", "score": 5 }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Mi sono sentito calmo e rilassato",
+      "answers": [
+        { "text": "Mai", "score": 0 },
+        { "text": "A volte", "score": 1 },
+        { "text": "Meno della metà del tempo", "score": 2 },
+        { "text": "Più della metà del tempo", "score": 3 },
+        { "text": "La maggior parte del tempo", "score": 4 },
+        { "text": "Sempre", "score": 5 }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Mi sono sentito attivo e vigoroso",
+      "answers": [
+        { "text": "Mai", "score": 0 },
+        { "text": "A volte", "score": 1 },
+        { "text": "Meno della metà del tempo", "score": 2 },
+        { "text": "Più della metà del tempo", "score": 3 },
+        { "text": "La maggior parte del tempo", "score": 4 },
+        { "text": "Sempre", "score": 5 }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Mi sono svegliato sentendomi fresco e riposato",
+      "answers": [
+        { "text": "Mai", "score": 0 },
+        { "text": "A volte", "score": 1 },
+        { "text": "Meno della metà del tempo", "score": 2 },
+        { "text": "Più della metà del tempo", "score": 3 },
+        { "text": "La maggior parte del tempo", "score": 4 },
+        { "text": "Sempre", "score": 5 }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "La mia vita quotidiana è stata piena di cose che mi interessano",
+      "answers": [
+        { "text": "Mai", "score": 0 },
+        { "text": "A volte", "score": 1 },
+        { "text": "Meno della metà del tempo", "score": 2 },
+        { "text": "Più della metà del tempo", "score": 3 },
+        { "text": "La maggior parte del tempo", "score": 4 },
+        { "text": "Sempre", "score": 5 }
+      ]
+    }
+  ],
+  "maxRawScore": 25,
+  "scoringNote": "Il punteggio grezzo va da 0 a 25. Per ottenere il punteggio percentuale (0-100), moltiplicare il punteggio grezzo per 4.",
+  "interpretations": [
+    { "min": 0, "max": 12, "label": "Benessere mentale scarso — si consiglia una valutazione approfondita" },
+    { "min": 13, "max": 25, "label": "Buon benessere mentale" }
+  ]
+}

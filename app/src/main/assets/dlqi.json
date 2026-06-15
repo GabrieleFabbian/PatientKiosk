@@ -1,0 +1,115 @@
+{
+  "id": "dlqi",
+  "name": "DLQI",
+  "description": "Dermatology Life Quality Index",
+  "questions": [
+    {
+      "id": 1,
+      "text": "Negli ultimi 7 giorni, ha avuto prurito, dolore, o sensazioni di bruciore alla pelle?",
+      "answers": [
+        { "text": "Per niente", "score": 0 },
+        { "text": "Un po'", "score": 1 },
+        { "text": "Molto", "score": 2 },
+        { "text": "Moltissimo", "score": 3 }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Negli ultimi 7 giorni, si è sentito/a imbarazzato/a o a disagio a causa dei suoi problemi alla pelle?",
+      "answers": [
+        { "text": "Per niente", "score": 0 },
+        { "text": "Un po'", "score": 1 },
+        { "text": "Molto", "score": 2 },
+        { "text": "Moltissimo", "score": 3 }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Negli ultimi 7 giorni, i suoi problemi alla pelle le hanno creato fastidi per fare la spesa, occuparsi della casa o del giardino?",
+      "answers": [
+        { "text": "Per niente / Non riguarda il mio caso", "score": 0 },
+        { "text": "Un po'", "score": 1 },
+        { "text": "Molto", "score": 2 },
+        { "text": "Moltissimo", "score": 3 }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Negli ultimi 7 giorni, i suoi problemi alla pelle hanno influenzato la scelta dei vestiti da indossare?",
+      "answers": [
+        { "text": "Per niente / Non riguarda il mio caso", "score": 0 },
+        { "text": "Un po'", "score": 1 },
+        { "text": "Molto", "score": 2 },
+        { "text": "Moltissimo", "score": 3 }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Negli ultimi 7 giorni, i suoi problemi alla pelle hanno influito sulle sue attività con gli altri, o di tempo libero?",
+      "answers": [
+        { "text": "Per niente / Non riguarda il mio caso", "score": 0 },
+        { "text": "Un po'", "score": 1 },
+        { "text": "Molto", "score": 2 },
+        { "text": "Moltissimo", "score": 3 }
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Negli ultimi 7 giorni, i suoi problemi alla pelle le hanno reso difficile praticare sport?",
+      "answers": [
+        { "text": "Per niente / Non riguarda il mio caso", "score": 0 },
+        { "text": "Un po'", "score": 1 },
+        { "text": "Molto", "score": 2 },
+        { "text": "Moltissimo", "score": 3 }
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Negli ultimi 7 giorni, i suoi problemi alla pelle le hanno creato difficoltà nel lavoro o nello studio?",
+      "answers": [
+        { "text": "Per niente / Non riguarda il mio caso", "score": 0 },
+        { "text": "Un po'", "score": 1 },
+        { "text": "Molto", "score": 2 },
+        { "text": "Mi hanno impedito completamente di lavorare o studiare", "score": 3 }
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Negli ultimi 7 giorni, i suoi problemi alla pelle le hanno creato difficoltà con il/la suo/a compagno/a, con gli amici intimi o con i parenti?",
+      "answers": [
+        { "text": "Per niente / Non riguarda il mio caso", "score": 0 },
+        { "text": "Un po'", "score": 1 },
+        { "text": "Molto", "score": 2 },
+        { "text": "Moltissimo", "score": 3 }
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Negli ultimi 7 giorni, i suoi problemi alla pelle le hanno creato difficoltà di carattere sessuale?",
+      "answers": [
+        { "text": "Per niente / Non riguarda il mio caso", "score": 0 },
+        { "text": "Un po'", "score": 1 },
+        { "text": "Molto", "score": 2 },
+        { "text": "Moltissimo", "score": 3 }
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Negli ultimi 7 giorni, la cura per la pelle le ha dato problemi, per esempio portandole via del tempo o sporcando in casa?",
+      "answers": [
+        { "text": "Per niente / Non riguarda il mio caso", "score": 0 },
+        { "text": "Un po'", "score": 1 },
+        { "text": "Molto", "score": 2 },
+        { "text": "Moltissimo", "score": 3 }
+      ]
+    }
+  ],
+  "maxScore": 30,
+  "interpretations": [
+    { "min": 0, "max": 1, "label": "Nessun effetto sulla qualità di vita" },
+    { "min": 2, "max": 5, "label": "Effetto lieve" },
+    { "min": 6, "max": 10, "label": "Effetto moderato" },
+    { "min": 11, "max": 20, "label": "Effetto forte" },
+    { "min": 21, "max": 30, "label": "Effetto estremamente forte" }
+  ]
+}
