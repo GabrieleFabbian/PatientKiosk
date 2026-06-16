@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="48dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PatientKiosk"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#1A1A2E"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inserisci il tuo codice paziente per iniziare"
+            android:textSize="16sp"
+            android:textColor="#6B7280"
+            android:gravity="center"
+            android:layout_marginBottom="48dp"/>
+
+        <EditText
+            android:id="@+id/etPatientCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="es. PAZ-00123"
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:background="@drawable/bg_input"
+            android:inputType="text"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/tvError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inserisci un codice valido"
+            android:textColor="#E53935"
+            android:textSize="14sp"
+            android:visibility="gone"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Continua"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:backgroundTint="#1D9E75"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/tvHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Se non conosci il tuo codice, chiedi al personale"
+            android:textSize="12sp"
+            android:textColor="#9CA3AF"
+            android:gravity="center"/>
+
+    </LinearLayout>
+</ScrollView>
