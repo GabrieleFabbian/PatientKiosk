@@ -161,9 +161,9 @@
   "maxScoreAnxiety": 21,
   "maxScoreDepression": 21,
   "interpretations": [
-    { "min": 0, "max": 7, "label": "Nella norma" },
-    { "min": 8, "max": 10, "label": "Lieve" },
-    { "min": 11, "max": 14, "label": "Moderato" },
-    { "min": 15, "max": 21, "label": "Grave" }
+    { "min": 0, "max": 14, "label": "Nella norma" },
+    { "min": 15, "max": 21, "label": "Lieve" },
+    { "min": 22, "max": 28, "label": "Moderato" },
+    { "min": 29, "max": 42, "label": "Grave" }
   ]
 }
