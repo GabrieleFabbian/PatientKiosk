@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">PatientKiosk</string>
+    <string name="welcome_title">PatientKiosk</string>
+    <string name="welcome_subtitle">Inserisci il tuo codice paziente per iniziare</string>
+    <string name="welcome_hint">es. PAZ-00123</string>
+    <string name="welcome_error">Inserisci un codice valido</string>
+    <string name="welcome_button">Continua</string>
+    <string name="welcome_footer">Se non conosci il tuo codice, chiedi al personale</string>
+    <string name="select_questionnaire">Seleziona un questionario</string>
+    <string name="select_subtitle">Scegli il questionario indicato dal medico</string>
 </resources>
