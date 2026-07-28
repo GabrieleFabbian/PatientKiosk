@@ -55,17 +55,19 @@
         android:layout_marginBottom="32dp"/>
 
     <LinearLayout
+        style="?android:attr/buttonBarStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center">
 
         <Button
+            style="?android:attr/buttonBarButtonStyle"
             android:id="@+id/btnBack"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Indietro"
+            android:text="@string/btn_back"
             android:textSize="18sp"
             android:padding="20dp"
             android:backgroundTint="#E5E7EB"
@@ -73,11 +75,12 @@
             android:layout_marginEnd="12dp"/>
 
         <Button
+            style="?android:attr/buttonBarButtonStyle"
             android:id="@+id/btnNext"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
-            android:text="Prossima domanda"
+            android:text="@string/btn_next"
             android:textSize="18sp"
             android:padding="20dp"
             android:backgroundTint="#1D9E75"

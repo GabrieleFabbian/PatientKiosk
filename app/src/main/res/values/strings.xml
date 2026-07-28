@@ -8,4 +8,10 @@
     <string name="welcome_footer">Se non conosci il tuo codice, chiedi al personale</string>
     <string name="select_questionnaire">Seleziona un questionario</string>
     <string name="select_subtitle">Scegli il questionario indicato dal medico</string>
+    <string name="btn_back">Indietro</string>
+    <string name="btn_next">Prossima domanda</string>
+    <string name="btn_conclude">Concludi</string>
+    <string name="btn_finish">Torna all\'inizio</string>
+    <string name="result_title">Compilazione completata</string>
+    <string name="result_footer">Il medico vedrà questi risultati durante la visita</string>
 </resources>
