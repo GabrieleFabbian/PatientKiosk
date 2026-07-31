@@ -25,7 +25,7 @@ class WelcomeActivity : AppCompatActivity() {
         btnContinue.setOnClickListener {
             val code = etPatientCode.text.toString().trim()
 
-            if (code.isEmpty()) {
+            if (code.length < 3) {
                 tvError.visibility = View.VISIBLE
             } else {
                 tvError.visibility = View.GONE
