@@ -34,6 +34,7 @@
             android:layout_marginBottom="48dp"/>
 
         <EditText
+            android:importantForAutofill="no"
             android:id="@+id/etPatientCode"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
