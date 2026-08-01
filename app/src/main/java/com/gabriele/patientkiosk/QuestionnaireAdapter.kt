@@ -15,6 +15,7 @@ class QuestionnaireAdapter(
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val tvName: TextView = view.findViewById(R.id.tvQuestionnaireName)
         val tvDescription: TextView = view.findViewById(R.id.tvQuestionnaireDescription)
+        val tvBadge: TextView = view.findViewById(R.id.tvBadge)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -27,6 +28,12 @@ class QuestionnaireAdapter(
         val questionnaire = questionnaires[position]
         holder.tvName.text = questionnaire.name
         holder.tvDescription.text = questionnaire.description
+        holder.tvBadge.text = when (questionnaire.id) {
+            "dlqi" -> "Qualità della vita"
+            "hads" -> "Ansia e depressione"
+            "who5" -> "Benessere generale"
+            else -> ""
+        }
         holder.itemView.setOnClickListener { onItemClick(questionnaire) }
     }
 
