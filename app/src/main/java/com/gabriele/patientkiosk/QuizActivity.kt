@@ -82,8 +82,8 @@ class QuizActivity : AppCompatActivity() {
         question.answers.forEach { answer ->
             val btn = Button(this)
             btn.text = answer.text
-            btn.textSize = 15f
-            btn.setPadding(32, 24, 32, 24)
+            btn.textSize = 18f
+            btn.setPadding(32, 32, 32, 32)
 
             val params = LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT,
@@ -111,7 +111,7 @@ class QuizActivity : AppCompatActivity() {
             llAnswers.addView(btn)
         }
 
-        btnBack.visibility = if (currentQuestionIndex == 0) View.INVISIBLE else View.VISIBLE
+        btnBack.visibility = if (currentQuestionIndex == 0) View.GONE else View.VISIBLE
 
         val isLast = currentQuestionIndex == questionnaire.questions.size - 1
         btnNext.text = if (isLast) "Concludi" else "Prossima domanda"
