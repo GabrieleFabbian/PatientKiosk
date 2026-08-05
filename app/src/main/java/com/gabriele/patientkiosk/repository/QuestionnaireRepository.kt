@@ -26,7 +26,14 @@ class QuestionnaireRepository(private val context: Context) {
                 answers.add(Answer(a.getString("text"), a.getInt("score")))
             }
 
-            questions.add(Question(q.getInt("id"), q.getString("text"), answers))
+            questions.add(
+                Question(
+                    id = q.getInt("id"),
+                    text = q.getString("text"),
+                    answers = answers,
+                    type = q.optString("type", "")
+                )
+            )
         }
 
         val interpretationsArray = obj.getJSONArray("interpretations")
