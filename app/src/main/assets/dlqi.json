@@ -2,6 +2,7 @@
   "id": "dlqi",
   "name": "DLQI",
   "description": "Dermatology Life Quality Index",
+  "category": "Qualità della vita",
   "questions": [
     {
       "id": 1,

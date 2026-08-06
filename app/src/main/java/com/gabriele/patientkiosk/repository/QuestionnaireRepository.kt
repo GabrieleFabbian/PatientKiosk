@@ -54,6 +54,7 @@ class QuestionnaireRepository(private val context: Context) {
             id = obj.getString("id"),
             name = obj.getString("name"),
             description = obj.getString("description"),
+            category = obj.getString("category"),
             questions = questions,
             maxScore = obj.optInt("maxScore", obj.optInt("maxRawScore", obj.optInt("maxScoreAnxiety", 0) + obj.optInt("maxScoreDepression", 0))),
             interpretations = interpretations

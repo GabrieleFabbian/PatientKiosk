@@ -28,12 +28,7 @@ class QuestionnaireAdapter(
         val questionnaire = questionnaires[position]
         holder.tvName.text = questionnaire.name
         holder.tvDescription.text = questionnaire.description
-        holder.tvBadge.text = when (questionnaire.id) {
-            "dlqi" -> "Qualità della vita"
-            "hads" -> "Ansia e depressione"
-            "who5" -> "Benessere generale"
-            else -> ""
-        }
+        holder.tvBadge.text = questionnaire.category
         holder.itemView.setOnClickListener { onItemClick(questionnaire) }
     }
 

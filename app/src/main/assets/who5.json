@@ -2,7 +2,7 @@
   "id": "who5",
   "name": "WHO-5",
   "description": "World Health Organization-Five Well-Being Index",
-  "instructions": "Indichi per ciascuna delle cinque affermazioni quale si avvicina maggiormente a come si è sentito nelle ultime due settimane. Si noti che i numeri più alti indicano un migliore benessere.",
+  "category": "Benessere generale",
   "questions": [
     {
       "id": 1,

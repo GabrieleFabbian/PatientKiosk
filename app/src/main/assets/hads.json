@@ -2,6 +2,7 @@
   "id": "hads",
   "name": "HADS",
   "description": "Hospital Anxiety and Depression Scale",
+  "category": "Ansia e depressione",
   "questions": [
     {
       "id": 1,
