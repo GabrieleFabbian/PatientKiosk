@@ -2,7 +2,9 @@ package com.gabriele.patientkiosk
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.gabriele.patientkiosk.repository.QuestionnaireRepository
@@ -22,6 +24,8 @@ class ResultActivity : AppCompatActivity() {
         val patientCode = intent.getStringExtra("patient_code") ?: ""
         val questionnaireId = intent.getStringExtra("questionnaire_id") ?: ""
         val totalScore = intent.getIntExtra("total_score", 0)
+        val anxietyScore = intent.getIntExtra("anxiety_score", -1)
+        val depressionScore = intent.getIntExtra("depression_score", -1)
 
         tvQuestionnaireName = findViewById(R.id.tvQuestionnaireName)
         tvScore = findViewById(R.id.tvScore)
@@ -33,17 +37,48 @@ class ResultActivity : AppCompatActivity() {
         val questionnaire = repository.loadAll().first { it.id == questionnaireId }
 
         tvQuestionnaireName.text = "${questionnaire.name} — ${questionnaire.description}"
-        tvScore.text = "$totalScore"
-        tvMaxScore.text = "su ${questionnaire.maxScore}"
 
-        val interpretation = questionnaire.interpretations
-            .firstOrNull { totalScore >= it.min && totalScore <= it.max }
-        tvInterpretation.text = interpretation?.label ?: "—"
+        if (questionnaireId == "hads" && anxietyScore >= 0 && depressionScore >= 0) {
+            tvScore.visibility = View.GONE
+            tvMaxScore.visibility = View.GONE
+            tvInterpretation.visibility = View.GONE
+
+            val llHads = findViewById<LinearLayout>(R.id.llHadsScores)
+            llHads.visibility = View.VISIBLE
+
+            val tvAnxietyScore = findViewById<TextView>(R.id.tvAnxietyScore)
+            val tvAnxietyLabel = findViewById<TextView>(R.id.tvAnxietyLabel)
+            val tvDepressionScore = findViewById<TextView>(R.id.tvDepressionScore)
+            val tvDepressionLabel = findViewById<TextView>(R.id.tvDepressionLabel)
+
+            tvAnxietyScore.text = "$anxietyScore / 21"
+            tvDepressionScore.text = "$depressionScore / 21"
+
+            tvAnxietyLabel.text = getHadsInterpretation(anxietyScore)
+            tvDepressionLabel.text = getHadsInterpretation(depressionScore)
+
+        } else {
+            tvScore.text = "$totalScore"
+            tvMaxScore.text = "su ${questionnaire.maxScore}"
+
+            val interpretation = questionnaire.interpretations
+                .firstOrNull { totalScore >= it.min && totalScore <= it.max }
+            tvInterpretation.text = interpretation?.label ?: "—"
+        }
 
         btnFinish.setOnClickListener {
             val intent = Intent(this, WelcomeActivity::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
             startActivity(intent)
+        }
+    }
+
+    private fun getHadsInterpretation(score: Int): String {
+        return when {
+            score <= 7 -> "Nella norma"
+            score <= 10 -> "Lieve"
+            score <= 14 -> "Moderato"
+            else -> "Grave"
         }
     }
 }
