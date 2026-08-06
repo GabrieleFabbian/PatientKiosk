@@ -119,10 +119,21 @@ class QuizActivity : AppCompatActivity() {
 
     private fun goToResult() {
         val totalScore = selectedAnswers.values.sum()
+
+        val anxietyScore = questionnaire.questions
+            .filter { it.type == "anxiety" }
+            .sumOf { selectedAnswers[it.id] ?: 0 }
+
+        val depressionScore = questionnaire.questions
+            .filter { it.type == "depression" }
+            .sumOf { selectedAnswers[it.id] ?: 0 }
+
         val intent = Intent(this, ResultActivity::class.java)
         intent.putExtra("patient_code", patientCode)
         intent.putExtra("questionnaire_id", questionnaire.id)
         intent.putExtra("total_score", totalScore)
+        intent.putExtra("anxiety_score", anxietyScore)
+        intent.putExtra("depression_score", depressionScore)
         startActivity(intent)
     }
 }
