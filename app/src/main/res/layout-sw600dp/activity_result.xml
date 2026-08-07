@@ -10,32 +10,33 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center"
-        android:padding="32dp">
+        android:padding="64dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/result_title"
-            android:textSize="24sp"
+            android:textSize="52sp"
             android:textStyle="bold"
             android:textColor="#1A1A2E"
-            android:layout_marginBottom="8dp"/>
+            android:gravity="center"
+            android:layout_marginBottom="12dp"/>
 
         <TextView
             android:id="@+id/tvQuestionnaireName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="14sp"
+            android:textSize="28sp"
             android:textColor="#6B7280"
             android:gravity="center"
-            android:layout_marginBottom="32dp"/>
+            android:layout_marginBottom="48dp"/>
 
-        <!-- Punteggio normale (DLQI e WHO-5) -->
+        <!-- Punteggio normale DLQI e WHO-5 -->
         <TextView
             android:id="@+id/tvScore"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="64sp"
+            android:textSize="130sp"
             android:textStyle="bold"
             android:textColor="#1D9E75"
             android:layout_marginBottom="8dp"/>
@@ -44,7 +45,7 @@
             android:id="@+id/tvMaxScore"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:textSize="30sp"
             android:textColor="#6B7280"
             android:layout_marginBottom="24dp"/>
 
@@ -52,11 +53,11 @@
             android:id="@+id/tvInterpretation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
+            android:textSize="34sp"
             android:textStyle="bold"
             android:textColor="#1A1A2E"
             android:gravity="center"
-            android:layout_marginBottom="32dp"/>
+            android:layout_marginBottom="48dp"/>
 
         <!-- Punteggio doppio HADS -->
         <LinearLayout
@@ -64,14 +65,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:gravity="center"
             android:visibility="gone"
-            android:layout_marginBottom="32dp">
+            android:layout_marginBottom="24dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Ansia"
-                android:textSize="16sp"
+                android:textSize="22sp"
                 android:textColor="#6B7280"
                 android:layout_marginBottom="4dp"/>
 
@@ -79,7 +81,7 @@
                 android:id="@+id/tvAnxietyScore"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="48sp"
+                android:textSize="60sp"
                 android:textStyle="bold"
                 android:textColor="#1D9E75"
                 android:layout_marginBottom="4dp"/>
@@ -88,16 +90,16 @@
                 android:id="@+id/tvAnxietyLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
+                android:textSize="22sp"
                 android:textStyle="bold"
                 android:textColor="#1A1A2E"
-                android:layout_marginBottom="24dp"/>
+                android:layout_marginBottom="40dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Depressione"
-                android:textSize="16sp"
+                android:textSize="22sp"
                 android:textColor="#6B7280"
                 android:layout_marginBottom="4dp"/>
 
@@ -105,7 +107,7 @@
                 android:id="@+id/tvDepressionScore"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="48sp"
+                android:textSize="60sp"
                 android:textStyle="bold"
                 android:textColor="#1D9E75"
                 android:layout_marginBottom="4dp"/>
@@ -114,7 +116,7 @@
                 android:id="@+id/tvDepressionLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
+                android:textSize="22sp"
                 android:textStyle="bold"
                 android:textColor="#1A1A2E"/>
 
@@ -124,19 +126,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/result_footer"
-            android:textSize="12sp"
+            android:textSize="22sp"
             android:textColor="#9CA3AF"
             android:gravity="center"
-            android:layout_marginBottom="32dp"/>
+            android:layout_marginBottom="48dp"/>
 
         <Button
             android:id="@+id/btnFinish"
-            android:layout_width="match_parent"
+            android:layout_width="500dp"
             android:layout_height="wrap_content"
             android:text="@string/btn_finish"
+            android:textSize="26sp"
             android:backgroundTint="#1D9E75"
             android:textColor="#FFFFFF"
-            android:padding="16dp"/>
+            android:padding="20dp"/>
 
     </LinearLayout>
 </ScrollView>
